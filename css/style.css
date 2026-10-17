@@ -120,3 +120,332 @@ body {
 .contact-button:hover {
     background-color: #007de5;
 }
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(21, 151, 255, 0.18),
+            transparent 35%
+        ),
+        linear-gradient(
+            120deg,
+            #071827 0%,
+            #081d31 55%,
+            #06234a 100%
+        );
+
+    color: white;
+
+    overflow: hidden;
+}
+
+.hero-container {
+    display: grid;
+
+    grid-template-columns: 1.15fr 0.85fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+
+/* LEFT SIDE */
+
+.hero-greeting {
+    color: #d5e1ec;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 14px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+
+    line-height: 1.08;
+
+    margin-bottom: 12px;
+}
+
+.hero-content h1 span {
+    color: #1597ff;
+}
+
+.hero-content h2 {
+    font-size: 18px;
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+
+    color: #f2f6fa;
+}
+
+.hero-content h2 span {
+    color: #1597ff;
+
+    margin: 0 4px;
+}
+
+.hero-description {
+    max-width: 650px;
+
+    color: #d0dae4;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 28px;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: #1597ff;
+
+    color: white;
+
+    border: 1px solid #1597ff;
+}
+
+.btn-primary:hover {
+    background-color: #007de5;
+}
+
+.btn-outline {
+    color: white;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+
+    border-color: white;
+}
+
+
+/* SOCIAL LINKS */
+
+.hero-socials {
+    display: flex;
+
+    gap: 25px;
+}
+
+.hero-socials a {
+    color: #d9e2ec;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: color 0.3s ease;
+}
+
+.hero-socials a:hover {
+    color: #1597ff;
+}
+
+
+/* ================================
+   HERO VISUAL
+================================ */
+
+.hero-visual {
+    position: relative;
+
+    min-height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* CODE WINDOW */
+
+.code-window {
+    width: 360px;
+
+    background-color: #07131f;
+
+    border: 1px solid rgba(21, 151, 255, 0.4);
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.45),
+        0 0 40px rgba(21, 151, 255, 0.12);
+
+    overflow: hidden;
+
+    transform: perspective(900px) rotateY(-7deg);
+}
+
+.window-controls {
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 0 15px;
+
+    background-color: #0c2033;
+}
+
+.window-controls span {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background-color: #1597ff;
+}
+
+.window-controls span:nth-child(2) {
+    opacity: 0.65;
+}
+
+.window-controls span:nth-child(3) {
+    opacity: 0.35;
+}
+
+.code-content {
+    padding: 30px;
+
+    font-family: Consolas, monospace;
+
+    font-size: 13px;
+
+    line-height: 2;
+
+    color: #d9e6f2;
+}
+
+.code-content .indent {
+    padding-left: 18px;
+}
+
+.code-blue {
+    color: #36a9ff;
+}
+
+.code-purple {
+    color: #bd7cff;
+}
+
+.code-green {
+    color: #67d391;
+}
+
+
+/* FLOATING CARDS */
+
+.floating-card {
+    position: absolute;
+
+    width: 95px;
+    height: 85px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    background-color: rgba(7, 24, 39, 0.9);
+
+    border: 1px solid rgba(21, 151, 255, 0.55);
+
+    border-radius: 10px;
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+
+    backdrop-filter: blur(10px);
+
+    font-size: 13px;
+}
+
+.floating-card strong {
+    color: #1597ff;
+
+    font-size: 22px;
+}
+
+.develop-card {
+    top: 10px;
+    left: 0;
+}
+
+.solve-card {
+    top: -15px;
+    right: 45px;
+}
+
+.support-card {
+    top: 90px;
+    right: -10px;
+}
+
+.organise-card {
+    bottom: 5px;
+    right: 25px;
+}
