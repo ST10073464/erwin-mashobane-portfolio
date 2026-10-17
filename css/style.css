@@ -969,6 +969,468 @@ body {
     font-weight: 500;
 }
 
+/* =========================================
+   PROFESSIONAL EXPERIENCE
+========================================= */
+
+.experience-section {
+    padding: 75px 0;
+
+    background-color: #ffffff;
+}
+
+.experience-layout {
+    display: grid;
+
+    grid-template-columns: 1.7fr 0.7fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+
+/* TIMELINE */
+
+.experience-timeline {
+    position: relative;
+}
+
+.experience-timeline::before {
+    content: "";
+
+    position: absolute;
+
+    top: 10px;
+    bottom: 10px;
+    left: 8px;
+
+    width: 2px;
+
+    background-color: #dceaf5;
+}
+
+.experience-item {
+    position: relative;
+
+    padding-left: 42px;
+
+    margin-bottom: 25px;
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-marker {
+    position: absolute;
+
+    top: 25px;
+    left: 0;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: #1597ff;
+
+    border: 4px solid #e5f3ff;
+
+    border-radius: 50%;
+
+    z-index: 2;
+}
+
+
+/* EXPERIENCE CARD */
+
+.experience-card {
+    padding: 25px;
+
+    background-color: #f8fbfe;
+
+    border: 1px solid #e1ebf3;
+
+    border-radius: 10px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateX(5px);
+
+    border-color: #b9ddfb;
+
+    box-shadow: 0 12px 30px rgba(7, 24, 39, 0.07);
+}
+
+
+/* EXPERIENCE HEADER */
+
+.experience-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 15px;
+}
+
+.experience-card h3 {
+    color: #10243a;
+
+    font-size: 18px;
+
+    margin-bottom: 4px;
+}
+
+.experience-card h4 {
+    color: #1597ff;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.experience-date {
+    color: #68798a;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.experience-status {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    padding: 4px 8px;
+
+    background-color: #dff2ff;
+
+    border-radius: 4px;
+
+    color: #087fe7;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* DESCRIPTION */
+
+.experience-card > p {
+    color: #5d6e7e;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+}
+
+
+/* TAGS */
+
+.experience-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+.experience-tags span {
+    padding: 6px 9px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e0e9f1;
+
+    border-radius: 4px;
+
+    color: #586b7c;
+
+    font-size: 11px;
+}
+
+
+/* EXPERIENCE SUMMARY */
+
+.experience-summary {
+    position: sticky;
+
+    top: 30px;
+
+    padding: 32px;
+
+    background:
+        radial-gradient(
+            circle at 100% 100%,
+            rgba(21, 151, 255, 0.22),
+            transparent 40%
+        ),
+        linear-gradient(
+            145deg,
+            #071827,
+            #0a315c
+        );
+
+    border-radius: 12px;
+
+    color: white;
+}
+
+.summary-label {
+    color: #1597ff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.experience-summary h3 {
+    font-size: 23px;
+
+    line-height: 1.35;
+
+    margin-bottom: 18px;
+}
+
+.experience-summary > p:not(.summary-label) {
+    color: #d2dde7;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-bottom: 14px;
+}
+
+.summary-stat {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.summary-stat strong {
+    display: block;
+
+    color: #1597ff;
+
+    font-size: 30px;
+
+    margin-bottom: 3px;
+}
+
+.summary-stat span {
+    color: #d2dde7;
+
+    font-size: 12px;
+}
+
+/* =========================================
+   EDUCATION
+========================================= */
+
+.education-section {
+    padding: 75px 0;
+
+    background-color: #f5f9fc;
+}
+
+.education-heading {
+    margin-bottom: 35px;
+}
+
+
+/* EDUCATION GRID */
+
+.education-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* EDUCATION CARD */
+
+.education-card {
+    position: relative;
+
+    padding: 28px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dfe9f2;
+
+    border-radius: 10px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #b9ddfb;
+
+    box-shadow: 0 15px 35px rgba(7, 24, 39, 0.08);
+}
+
+
+/* FEATURED CURRENT QUALIFICATION */
+
+.featured-education {
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #edf7ff
+        );
+
+    border-color: #b9ddfb;
+}
+
+
+/* TOP AREA */
+
+.education-top {
+    min-height: 48px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.education-icon {
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #e7f4ff;
+
+    border-radius: 9px;
+
+    color: #1597ff;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+.education-badge {
+    padding: 6px 10px;
+
+    background-color: #1597ff;
+
+    border-radius: 4px;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* EDUCATION TEXT */
+
+.education-year {
+    color: #1597ff;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+.education-card h3 {
+    color: #10243a;
+
+    font-size: 18px;
+
+    line-height: 1.35;
+
+    margin-bottom: 6px;
+}
+
+.education-card h4 {
+    color: #536779;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin-bottom: 12px;
+}
+
+.education-card > p:not(.education-year) {
+    color: #68798a;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    margin-bottom: 16px;
+}
+
+
+/* EDUCATION TAGS */
+
+.education-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+.education-tags span {
+    padding: 6px 9px;
+
+    background-color: #f3f7fa;
+
+    border: 1px solid #e0e8ef;
+
+    border-radius: 4px;
+
+    color: #586b7c;
+
+    font-size: 11px;
+}
 
 /* =========================================
    BASIC RESPONSIVENESS
