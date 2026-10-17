@@ -449,3 +449,114 @@ body {
     bottom: 5px;
     right: 25px;
 }
+
+/* ================================
+   PROFESSIONAL PILLARS
+================================ */
+
+.professional-pillars {
+    background-color: #ffffff;
+
+    padding: 20px 0;
+}
+
+.pillars-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 14px;
+}
+
+
+/* INDIVIDUAL CARD */
+
+.pillar-card {
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #f8fbff,
+        #eef7ff
+    );
+
+    border: 1px solid #e4edf5;
+
+    border-radius: 8px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.pillar-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 30px rgba(7, 24, 39, 0.10);
+}
+
+
+/* CARD ICON */
+
+.pillar-icon {
+    min-width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+
+/* ICON COLOURS */
+
+.icon-blue {
+    color: #087fe7;
+    background-color: #dff0ff;
+}
+
+.icon-green {
+    color: #0b9b5b;
+    background-color: #ddf8e9;
+}
+
+.icon-purple {
+    color: #8147e6;
+    background-color: #eee5ff;
+}
+
+.icon-orange {
+    color: #e38a00;
+    background-color: #fff1d8;
+}
+
+
+/* CARD TEXT */
+
+.pillar-card h3 {
+    color: #10243a;
+
+    font-size: 14px;
+
+    margin-bottom: 6px;
+}
+
+.pillar-card p {
+    color: #5e6d7c;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
