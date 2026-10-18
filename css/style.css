@@ -3341,3 +3341,41 @@ body {
 .cv-content > p:not(.section-label) {
     color: #e1e8ef;
 }
+
+/* =========================================
+   LIGHTHOUSE ACCESSIBILITY OVERRIDES
+   Final targeted contrast corrections
+========================================= */
+
+/* HOME - primary button */
+.hero-buttons .btn-primary {
+    background: #005ea8;
+    border-color: #005ea8;
+    color: #ffffff;
+}
+
+/* ABOUT - section label */
+.about-section .section-label {
+    color: #005ea8;
+}
+
+/* ABOUT - More About Me button */
+.about-button {
+    background: #005ea8;
+    border-color: #005ea8;
+    color: #ffffff;
+}
+
+/* ABOUT - detail information */
+.about-details span {
+    color: #334e68;
+}
+
+/* ALL LIGHT SECTION LABELS */
+.skills-section .section-label,
+.experience-section .section-label,
+.education-section .section-label,
+.projects-section .section-label,
+.contact-section .section-label {
+    color: #005ea8;
+}
