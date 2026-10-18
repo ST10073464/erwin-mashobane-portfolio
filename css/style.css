@@ -3235,3 +3235,109 @@ body {
     }
 
 }
+
+/* =========================================
+   ACCESSIBILITY - FINAL CONTRAST FIX
+========================================= */
+
+/* Blue text displayed on white/light backgrounds */
+.about-section .section-label,
+.skills-section .section-label,
+.experience-section .section-label,
+.education-section .section-label,
+.projects-section .section-label,
+.contact-section .section-label,
+.education-year,
+.project-type,
+.github-projects-link,
+.project-link,
+.contact-card > div > span {
+    color: #005fb8;
+}
+
+
+/* Secondary text on light backgrounds */
+.about-section p,
+.about-details span,
+.education-card p,
+.projects-section p,
+.contact-card p {
+    color: #40566d;
+}
+
+
+/* Keep headings and important text dark */
+.about-section h2,
+.skills-section h2,
+.experience-section h2,
+.education-section h2,
+.projects-section h2,
+.contact-section h2,
+.education-card h3,
+.project-card h3,
+.contact-card strong {
+    color: #10243a;
+}
+
+
+/* Improve blue button contrast by darkening background */
+.btn-primary,
+.about-button,
+.cv-primary,
+.contact-primary {
+    background-color: #006fc9;
+    border-color: #006fc9;
+    color: #ffffff;
+}
+
+.btn-primary:hover,
+.about-button:hover,
+.cv-primary:hover,
+.contact-primary:hover {
+    background-color: #005ca8;
+    border-color: #005ca8;
+}
+
+
+/* Education current badge */
+.education-badge {
+    background-color: #006fc9;
+    color: #ffffff;
+}
+
+
+/* CV mock document */
+.document-header span {
+    color: #526575;
+}
+
+.document-section-title {
+    color: #005fb8;
+}
+
+.document-logo {
+    background-color: #006fc9;
+    color: #ffffff;
+}
+
+
+/* Contact icons and labels */
+.contact-icon {
+    color: #005fb8;
+}
+
+.contact-card > div > span {
+    font-weight: 700;
+}
+
+
+/* Keep bright blue section label on dark CV background */
+.cv-section .section-label {
+    color: #4db2ff;
+}
+
+
+/* CV dark section paragraph */
+.cv-content > p:not(.section-label) {
+    color: #e1e8ef;
+}
