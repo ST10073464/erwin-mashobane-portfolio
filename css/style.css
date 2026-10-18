@@ -747,7 +747,7 @@ body {
 .fact-item span {
     display: block;
 
-    color: #6b7987;
+    color: #172033;
 
     font-size: 12px;
 
@@ -1398,7 +1398,7 @@ body {
 }
 
 .education-card > p:not(.education-year) {
-    color: #68798a;
+    color: #172033;
 
     font-size: 13px;
 
@@ -3378,4 +3378,23 @@ body {
 .projects-section .section-label,
 .contact-section .section-label {
     color: #005ea8;
+}
+
+/* =========================================
+   REMAINING LIGHTHOUSE CONTRAST FIXES
+========================================= */
+
+.fact-item span {
+    color: #10243a;
+    font-weight: 500;
+}
+
+.education-card > p:not(.education-year) {
+    color: #10243a;
+    font-weight: 500;
+}
+
+.project-links a {
+    color: #003f73;
+    font-weight: 700;
 }
